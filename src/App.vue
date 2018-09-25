@@ -43,7 +43,7 @@
       <v-toolbar-side-icon>
         <v-flex>
             <v-avatar size="36px">
-              <img src="./assets/jorge's profile.png" alt="Avatar">
+              <img src="static/jorge's profile.png" alt="Avatar">
             </v-avatar>
           </v-flex>
       </v-toolbar-side-icon>
