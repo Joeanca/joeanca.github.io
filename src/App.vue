@@ -8,7 +8,20 @@
       enable-resize-watcher
       fixed
       app
-    >
+      :width="200"
+    >      
+      <v-list>
+          <v-list-tile avatar @click="drawer=!drawer">
+            <v-list-tile-avatar>
+              <img src="static/jorge's profile.png" alt="Avatar">
+            </v-list-tile-avatar>
+
+            <v-list-tile-content>
+              <v-list-tile-title>Jorge Castano</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list>
+      <v-divider></v-divider>
       <v-list>
         <v-list-tile
           value="true"
@@ -40,10 +53,16 @@
       <!-- <v-btn icon @click.stop="rightDrawer = !rightDrawer">
         <v-icon>menu</v-icon>
       </v-btn> -->
-      <v-toolbar-side-icon>
+      <!-- <v-toolbar-side-icon>
         <v-flex>
             <v-avatar size="36px">
-              <img src="static/jorge's profile.png" alt="Avatar">
+            </v-avatar>
+          </v-flex>
+      </v-toolbar-side-icon> -->
+      <v-toolbar-side-icon>
+        <v-flex>
+            <v-avatar size="36px" id=githubContainer>
+              <i id=github class="fab fa-github" size="36px"></i>
             </v-avatar>
           </v-flex>
       </v-toolbar-side-icon>
@@ -75,12 +94,14 @@ export default {
         return {
             title: 'Jorge Castano\'s',
             clipped: false,
-            drawer: true,
+            drawer: false,
             fixed: false,
-            items: [{
-              icon: 'bubble_chart',
-              title: 'Inspire'
-            }],
+            items: [
+              {icon: 'dashboard', title: 'Dashboard'},
+              {icon: 'fas fa-briefcase', title: 'Projects'},
+              {icon: 'fab fa-fort-awesome-alt', title: 'Hobbies'},
+              {icon: 'far fa-file-pdf', title: 'Resume'}
+            ],
             miniVariant: false,
             right: true,
             rightDrawer: false,
@@ -88,6 +109,8 @@ export default {
     }
 }
 </script>
-
-<style>
+<style scoped>
+#githubContainer{
+  font-size: 36px;
+}
 </style>

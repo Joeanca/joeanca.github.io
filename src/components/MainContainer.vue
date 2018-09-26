@@ -5,8 +5,8 @@
         <v-parallax src="static/business-computer-connection-450035.jpg" height="600" width="100%">
           <v-layout column align-center justify-center class="white--text">
             <img src="static/jorge's profile.png" alt="Vuetify.js" height="200">
-            <h1 class="white--text mb-2 display-1 text-xs-center">Jorge Castano</h1>
-            <div class="subheading mb-3 text-xs-center">Software developer</div>
+            <h1 class="white--text mb-2 display-2 text-xs-center font-weight-medium" id=name>Jorge Castano</h1>
+            <div class="subheading mb-3 text-xs-center display-4">Software developer</div>
           </v-layout>
         </v-parallax>
       </section>
@@ -14,7 +14,7 @@
         <v-layout column wrap class="my-5" align-center >
           <v-flex xs12 sm4 class="my-3">
             <div class="text-xs-center">
-              <h2 class="headline">The best way to start developing</h2>
+              <h2 class="headline" >The best way to start developing</h2>
               <span class="subheading">
                 Cras facilisis mi vitae nunc 
               </span>
@@ -26,25 +26,23 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">color_lens</v-icon>
+                      <v-icon x-large class="blue--text text--lighten-2">important_devices</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Material Design</div>
+                      <div class="headline text-xs-center">Programming</div>
                     </v-card-title>
                     <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+                      Finding the right tool to create a solution is my passion. Progressing technological requirements require innovative solutions. Curiosity and creativity guide my discovery process and allow for the innovation to tackle the constantly shifting technological market.
                     </v-card-text>
                   </v-card>
                 </v-flex>
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">flash_on</v-icon>
+                      <v-icon x-large class="blue--text text--lighten-2">memory</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline">Fast development</div>
+                      <div class="headline">Home automation</div>
                     </v-card-title>
                     <v-card-text>
                       Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
@@ -59,7 +57,7 @@
                       <v-icon x-large class="blue--text text--lighten-2">build</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Completely Open Sourced</div>
+                      <div class="headline text-xs-center">Hobbies</div>
                     </v-card-title>
                     <v-card-text>
                       Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
@@ -117,18 +115,10 @@
                 <v-list class="transparent">
                   <v-list-tile>
                     <v-list-tile-action>
-                      <v-icon class="blue--text text--lighten-2">phone</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>777-867-5309</v-list-tile-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                  <v-list-tile>
-                    <v-list-tile-action>
                       <v-icon class="blue--text text--lighten-2">place</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
-                      <v-list-tile-title>Chicago, US</v-list-tile-title>
+                      <v-list-tile-title>Calgary, Canada</v-list-tile-title>
                     </v-list-tile-content>
                   </v-list-tile>
                   <v-list-tile>
@@ -136,7 +126,7 @@
                       <v-icon class="blue--text text--lighten-2">email</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
-                      <v-list-tile-title>joeanca@gmail.com</v-list-tile-title>
+                      <v-list-tile-title>jcast236@mtroyal.ca</v-list-tile-title>
                     </v-list-tile-content>
                   </v-list-tile>
                 </v-list>
@@ -180,5 +170,19 @@ li {
 }
 a {
     color: #42b983;
+}
+#name{
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        /* 0 4px 0 #b9b9b9,
+        0 5px 0 #aaa, */
+        /* 0 6px 1px rgba(0,0,0,.1), */
+        0 0 5px rgba(0,0,0,.1),
+        0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.25),
+        0 10px 10px rgba(0,0,0,.2),
+        0 15px 15px rgba(0,0,0,.15);
 }
 </style>
