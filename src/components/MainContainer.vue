@@ -3,11 +3,13 @@
         <v-content>
       <section>
         <v-parallax src="static/business-computer-connection-450035.jpg" height="600" width="100%">
-          <v-layout column align-center justify-center class="white--text">
-            <img src="static/jorge's profile.png" alt="Vuetify.js" height="200">
-            <h1 class="white--text mb-2 display-2 text-xs-center font-weight-medium" id=name>Jorge Castano</h1>
-            <div class="subheading mb-3 text-xs-center display-4">Software developer</div>
-          </v-layout>
+          <v-container justify-center>
+            <v-layout column class="white--text" style="align-items: center;">
+              <img xsclass="item" src="static/jorge's profile.png" alt="Vuetify.js" height="200" width="200">
+              <h1 class="item white--text mb-2 display-2 text-xs-center font-weight-medium" id=name>Jorge Castano</h1>
+              <div class="item subheading mb-3 text-xs-center display-4">Software developer</div>
+            </v-layout>
+          </v-container>
         </v-parallax>
       </section>
       <section>
@@ -16,7 +18,7 @@
             <div class="text-xs-center">
               <h2 class="headline" >The best way to start developing</h2>
               <span class="subheading">
-                Cras facilisis mi vitae nunc 
+                Cras facilisis mi vitae nunc
               </span>
             </div>
           </v-flex>
@@ -45,9 +47,9 @@
                       <div class="headline">Home automation</div>
                     </v-card-title>
                     <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -60,9 +62,9 @@
                       <div class="headline text-xs-center">Hobbies</div>
                     </v-card-title>
                     <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -98,9 +100,9 @@
                   <div class="headline">Company info</div>
                 </v-card-title>
                 <v-card-text>
-                  Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                  Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+                  Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+                  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                  Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
                 </v-card-text>
               </v-card>
             </v-flex>
@@ -113,22 +115,22 @@
                   Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
                 </v-card-text>
                 <v-list class="transparent">
-                  <v-list-tile>
-                    <v-list-tile-action>
+                  <v-list-item-title>
+                    <v-list-item-action>
                       <v-icon class="blue--text text--lighten-2">place</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>Calgary, Canada</v-list-tile-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                  <v-list-tile>
-                    <v-list-tile-action>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                      <v-list-item-title>Calgary, Canada</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item-title>
+                  <v-list-item-title>
+                    <v-list-item-action>
                       <v-icon class="blue--text text--lighten-2">email</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>jcast236@mtroyal.ca</v-list-tile-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                      <v-list-item-title>jcast236@mtroyal.ca</v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item-title>
                 </v-list>
               </v-card>
             </v-flex>
@@ -145,15 +147,15 @@
     </v-content>
 
     </v-layout>
-</template>  
+</template>
 <script>
 export default {
-    name: 'MainContainer',
-    data () {
-        return {
-            title: 'Your Logo'
-        }
+  name: 'MainContainer',
+  data () {
+    return {
+      title: 'Your Logo'
     }
+  }
 }
 </script>
 <style scoped>

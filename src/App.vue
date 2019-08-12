@@ -9,36 +9,45 @@
       fixed
       app
       :width="200"
-    >      
+    >
       <v-list>
-          <v-list-tile avatar @click="drawer=!drawer">
-            <v-list-tile-avatar>
+          <v-list-item @click="drawer=!drawer">
+            <v-list-item-avatar>
               <img src="static/jorge's profile.png" alt="Avatar">
-            </v-list-tile-avatar>
+            </v-list-item-avatar>
 
-            <v-list-tile-content>
-              <v-list-tile-title>Jorge Castano</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
+            <v-list-item-content>
+              <v-list-item-title>Jorge Castano</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </v-list>
       <v-divider></v-divider>
       <v-list>
-        <v-list-tile
+        <v-list-item
           value="true"
           v-for="(item, i) in items"
           :key="i"
         >
-          <v-list-tile-action>
+          <v-list-item-action>
             <v-icon v-html="item.icon"></v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title v-text="item.title"></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar app class="white" :clipped-left="clipped">
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+    <v-app-bar
+      app
+      dense
+      shrink-on-scroll
+      fade-img-on-scroll
+      dark
+      src="static/business-computer-connection-450035.jpg"
+      scroll-threshold="300"
+
+    >
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <!-- <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'"></v-icon>
       </v-btn>
@@ -53,35 +62,35 @@
       <!-- <v-btn icon @click.stop="rightDrawer = !rightDrawer">
         <v-icon>menu</v-icon>
       </v-btn> -->
-      <!-- <v-toolbar-side-icon>
+      <!-- <v-app-bar-nav-icon>
         <v-flex>
             <v-avatar size="36px">
             </v-avatar>
           </v-flex>
-      </v-toolbar-side-icon> -->
-      <v-toolbar-side-icon>
+      </v-app-bar-nav-icon> -->
+      <v-app-bar-nav-icon>
         <v-flex>
             <v-avatar size="36px" id=githubContainer>
               <i id=github class="fab fa-github" size="36px"></i>
             </v-avatar>
           </v-flex>
-      </v-toolbar-side-icon>
+      </v-app-bar-nav-icon>
 
-    </v-toolbar>
+    </v-app-bar>
     <router-view/>
-    <v-navigation-drawer temporary 
+    <v-navigation-drawer temporary
       :right="right"
       v-model="rightDrawer"
       fixed
       app
     >
       <v-list>
-        <v-list-tile @click="right = !right">
-          <v-list-tile-action>
+        <v-list-item @click="right = !right">
+          <v-list-item-action>
             <v-icon>compare_arrows</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>
+          </v-list-item-action>
+          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
   </div>
@@ -91,22 +100,22 @@
 export default {
   name: 'App',
   data () {
-        return {
-            title: 'Jorge Castano\'s',
-            clipped: false,
-            drawer: false,
-            fixed: false,
-            items: [
-              {icon: 'dashboard', title: 'Dashboard'},
-              {icon: 'fas fa-briefcase', title: 'Projects'},
-              {icon: 'fab fa-fort-awesome-alt', title: 'Hobbies'},
-              {icon: 'far fa-file-pdf', title: 'Resume'}
-            ],
-            miniVariant: false,
-            right: true,
-            rightDrawer: false,
-        }
+    return {
+      title: 'Jorge Castano\'s',
+      clipped: false,
+      drawer: false,
+      fixed: false,
+      items: [
+        {icon: 'dashboard', title: 'Dashboard'},
+        {icon: 'fas fa-briefcase', title: 'Projects'},
+        {icon: 'fab fa-fort-awesome-alt', title: 'Hobbies'},
+        {icon: 'far fa-file-pdf', title: 'Resume'}
+      ],
+      miniVariant: false,
+      right: true,
+      rightDrawer: false
     }
+  }
 }
 </script>
 <style scoped>
